@@ -25,11 +25,11 @@ The workflow emphasizes:
 
 ### Single-Case Evaluation
 
-Evaluate an individual model response in depth. This workflow is appropriate for case studies, hallucination analysis, and detailed qualitative evaluations.
+Used for evaluating an individual model response, such as a hallucination analysis, reasoning assessment, or case study.
 
 ### Benchmark Evaluation
 
-Evaluate multiple prompts, multiple models, or repeated trials using the same methodology to enable statistical comparison and benchmarking.
+Used for evaluating multiple prompts, models, or repeated trials using a common methodology to enable statistical comparison.
 
 ---
 
@@ -37,11 +37,9 @@ Evaluate multiple prompts, multiple models, or repeated trials using the same me
 
 ### 1. Define the Evaluation
 
-Record:
-
-- Prompt
-- Evaluation objective
-- Evaluation category
+- Record the prompt
+- Define the evaluation objective
+- Identify the evaluation category
 
 Examples:
 
@@ -67,8 +65,6 @@ Document whenever available:
 - Web browsing enabled or disabled
 - System instructions (when known)
 
-These details improve reproducibility and allow future evaluations to be replicated under similar conditions.
-
 ---
 
 ### 3. Preserve the Original Response
@@ -91,13 +87,7 @@ Check:
 
 Whenever possible, support corrections using authoritative evidence.
 
-Record supporting evidence together with:
-
-- Source
-- Authority
-- Publication date
-- Retrieval date
-- URL (when applicable)
+Supporting evidence should include publication and retrieval information whenever practical.
 
 ---
 
@@ -105,30 +95,11 @@ Record supporting evidence together with:
 
 Every evaluation uses the standard scoring methodology defined in the **AI-Evaluation-Rubrics** repository.
 
-Core evaluation categories include:
-
-- Accuracy
-- Reasoning
-- Instruction Following
-- Completeness
-- Evidence Quality
-- Clarity
-- Safety
-
 ---
 
 ### 6. Apply Specialized Rubrics
 
-Depending on the evaluation, additional rubrics may be applied.
-
-Examples:
-
-- Hallucination Rubric
-- Reasoning Rubric
-- Translation Rubric
-- Pairwise Comparison Rubric
-- Search Quality Rubric
-- Safety Rubric
+Depending on the evaluation, one or more specialized rubrics may also be applied.
 
 ---
 
@@ -158,11 +129,7 @@ Scores should be reproducible by another evaluator using the same methodology.
 
 ### 9. Resolve Reviewer Disagreements
 
-When multiple evaluators participate:
-
-- Minor scoring differences may be resolved through discussion.
-- Significant disagreements should trigger an independent review.
-- Final decisions should be documented with supporting justification.
+When multiple evaluators participate, disagreements should be documented and resolved using evidence rather than consensus alone.
 
 ---
 
@@ -187,19 +154,11 @@ Publish the completed evaluation together with:
 - Rubric scores
 - Reviewer notes
 
-A completed evaluation should produce:
-
-- A documented evaluation record
-- Supporting evidence
-- Universal rubric scores
-- Specialized rubric scores (when applicable)
-- Final findings suitable for publication
-
 ---
 
 ## Evaluation Template
 
-Each completed evaluation should include the following information:
+Every completed evaluation should document:
 
 - Evaluation date
 - Evaluator
@@ -209,8 +168,7 @@ Each completed evaluation should include the following information:
 - Prompt
 - Model response
 - Supporting evidence
-- Universal rubric scores
-- Specialized rubric scores
+- Rubric scores
 - Findings
 - Evaluator notes
 
