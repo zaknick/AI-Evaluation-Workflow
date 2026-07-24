@@ -14,7 +14,7 @@ The workflow emphasizes:
 
 - Repeatability
 - Transparency
-- - Evidence-based evaluation
+- Evidence-based evaluation
 - Consistent scoring
 - Clear documentation
 - Reproducibility
@@ -176,7 +176,7 @@ Every completed evaluation should document:
 
 ## Workflow Outputs
 
-A completed evaluation should produce:
+Every completed evaluation should produce:
 
 - A documented evaluation record
 - Supporting evidence
