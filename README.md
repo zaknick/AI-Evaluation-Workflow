@@ -8,13 +8,13 @@ This repository documents the end-to-end evaluation process used throughout the 
 
 ## Mission
 
-Establish a consistent evaluation workflow that allows different reviewers to reach similar conclusions when evaluating the same AI response.
+Establish a standardized evaluation workflow that enables independent reviewers to reach consistent conclusions when evaluating the same AI response.
 
 The workflow emphasizes:
 
 - Repeatability
 - Transparency
-- Evidence-based analysis
+- - Evidence-based evaluation
 - Consistent scoring
 - Clear documentation
 - Reproducibility
@@ -162,8 +162,8 @@ Every completed evaluation should document:
 
 - Evaluation date
 - Evaluator
-- Model
-- Version
+- Model name
+- Model version
 - Platform
 - Prompt
 - Model response
@@ -173,6 +173,18 @@ Every completed evaluation should document:
 - Evaluator notes
 
 ---
+
+## Workflow Outputs
+
+A completed evaluation should produce:
+
+- A documented evaluation record
+- Supporting evidence
+- Universal rubric scores
+- Specialized rubric scores (when applicable)
+- Findings suitable for publication
+
+ ---
 
 ## Guiding Principles
 
@@ -205,7 +217,7 @@ The workflow is built around a few simple ideas:
 
 **Current Version:** 0.1
 
-This repository serves as the operational methodology of the **LLM Evaluation Lab**. The workflow will continue to evolve as additional evaluation methods, rubrics, and benchmarking techniques are developed and validated.
+This repository defines the operational methodology of the **LLM Evaluation Lab**. The workflow will continue to evolve as additional evaluation methods, rubrics, and benchmarking techniques are developed and validated.
 
 ---
 
