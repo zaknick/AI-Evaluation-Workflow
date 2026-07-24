@@ -1,8 +1,8 @@
-# Evaluation Workflow
+# AI-Evaluation-Workflow
 
 A standardized workflow for conducting consistent, reproducible, and evidence-based evaluations of large language models.
 
-This repository documents the end-to-end evaluation process used throughout **LLM Evaluation Lab**. Rather than relying on subjective impressions, every evaluation follows a structured methodology designed to produce transparent, repeatable, and well-documented results.
+This repository documents the end-to-end evaluation process used throughout the **LLM Evaluation Lab**. Rather than relying on subjective impressions, every evaluation follows a structured methodology designed to produce transparent, repeatable, and well-documented results.
 
 ---
 
@@ -17,6 +17,19 @@ The workflow emphasizes:
 - Evidence-based analysis
 - Consistent scoring
 - Clear documentation
+- Reproducibility
+
+---
+
+## Evaluation Types
+
+### Single-Case Evaluation
+
+Evaluate an individual model response in depth. This workflow is appropriate for case studies, hallucination analysis, and detailed qualitative evaluations.
+
+### Benchmark Evaluation
+
+Evaluate multiple prompts, multiple models, or repeated trials using the same methodology to enable statistical comparison and benchmarking.
 
 ---
 
@@ -24,9 +37,11 @@ The workflow emphasizes:
 
 ### 1. Define the Evaluation
 
-- Record the prompt.
-- Define the evaluation objective.
-- Identify the evaluation category.
+Record:
+
+- Prompt
+- Evaluation objective
+- Evaluation category
 
 Examples:
 
@@ -39,14 +54,20 @@ Examples:
 
 ---
 
-### 2. Record the Model
+### 2. Record the Evaluation Environment
 
-Document:
+Document whenever available:
 
 - Model name
-- Version (if available)
-- Date
+- Model version
 - Platform
+- Date
+- Temperature or generation settings
+- Tool access
+- Web browsing enabled or disabled
+- System instructions (when known)
+
+These details improve reproducibility and allow future evaluations to be replicated under similar conditions.
 
 ---
 
@@ -70,13 +91,21 @@ Check:
 
 Whenever possible, support corrections using authoritative evidence.
 
+Record supporting evidence together with:
+
+- Source
+- Authority
+- Publication date
+- Retrieval date
+- URL (when applicable)
+
 ---
 
 ### 5. Apply the Universal Rubric
 
-Every evaluation uses the standard scoring criteria defined in the **AI-Evaluation-Rubrics** repository.
+Every evaluation uses the standard scoring methodology defined in the **AI-Evaluation-Rubrics** repository.
 
-Core categories include:
+Core evaluation categories include:
 
 - Accuracy
 - Reasoning
@@ -90,7 +119,7 @@ Core categories include:
 
 ### 6. Apply Specialized Rubrics
 
-Depending on the task, additional rubrics may be used.
+Depending on the evaluation, additional rubrics may be applied.
 
 Examples:
 
@@ -127,7 +156,17 @@ Scores should be reproducible by another evaluator using the same methodology.
 
 ---
 
-### 9. Write Evaluator Notes
+### 9. Resolve Reviewer Disagreements
+
+When multiple evaluators participate:
+
+- Minor scoring differences may be resolved through discussion.
+- Significant disagreements should trigger an independent review.
+- Final decisions should be documented with supporting justification.
+
+---
+
+### 10. Write Evaluator Notes
 
 Summarize:
 
@@ -138,7 +177,7 @@ Summarize:
 
 ---
 
-### 10. Publish
+### 11. Publish
 
 Publish the completed evaluation together with:
 
@@ -148,25 +187,52 @@ Publish the completed evaluation together with:
 - Rubric scores
 - Reviewer notes
 
+A completed evaluation should produce:
+
+- A documented evaluation record
+- Supporting evidence
+- Universal rubric scores
+- Specialized rubric scores (when applicable)
+- Final findings suitable for publication
+
+---
+
+## Evaluation Template
+
+Each completed evaluation should include the following information:
+
+- Evaluation date
+- Evaluator
+- Model
+- Version
+- Platform
+- Prompt
+- Model response
+- Supporting evidence
+- Universal rubric scores
+- Specialized rubric scores
+- Findings
+- Evaluator notes
+
 ---
 
 ## Guiding Principles
 
 The workflow is built around a few simple ideas:
 
-- Evaluate the response, not the model.
-- Verify before scoring.
-- Explain every conclusion.
-- Separate facts from opinions.
-- Preserve reproducibility.
-- Document uncertainty.
-- Prioritize evidence over intuition.
+- Evaluate the response, not the model
+- Verify before scoring
+- Explain every conclusion
+- Separate facts from opinions
+- Preserve reproducibility
+- Document uncertainty
+- Prioritize evidence over intuition
 
 ---
 
 ## Related Repositories
 
-- AI-Evaluation-Rubrics
+- [AI-Evaluation-Rubrics](https://github.com/zaknick/AI-Evaluation-Rubrics)
 - AI-Hallucination-Database
 - LLM-Evaluation-Benchmarks
 - Prompt-Arena
@@ -179,6 +245,12 @@ The workflow is built around a few simple ideas:
 
 ## Status
 
-**Version 0.1**
+**Current Version:** 0.1
 
-This workflow will continue to evolve as additional evaluation methods, rubrics, and benchmarking techniques are incorporated into the LLM Evaluation Lab.
+This repository serves as the operational methodology of the **LLM Evaluation Lab**. The workflow will continue to evolve as additional evaluation methods, rubrics, and benchmarking techniques are developed and validated.
+
+---
+
+## License
+
+A project license will be added before Version 1.0 to define reuse and attribution requirements.
