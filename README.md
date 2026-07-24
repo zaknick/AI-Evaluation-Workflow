@@ -29,7 +29,7 @@ Used for evaluating an individual model response, such as a hallucination analys
 
 ### Benchmark Evaluation
 
-Used for evaluating multiple prompts, models, or repeated trials using a common methodology to enable statistical comparison.
+Used for evaluating multiple prompts, repeated trials, or multiple models using a common methodology to enable statistical comparison.
 
 ---
 
@@ -59,11 +59,12 @@ Document whenever available:
 - Model name
 - Model version
 - Platform
-- Date
+- Evaluation date
 - Temperature or generation settings
 - Tool access
 - Web browsing enabled or disabled
 - System instructions (when known)
+- Number of trials performed
 
 ---
 
@@ -87,7 +88,11 @@ Check:
 
 Whenever possible, support corrections using authoritative evidence.
 
-Supporting evidence should include publication and retrieval information whenever practical.
+For each supporting source, record whenever practical:
+
+- Source authority
+- Publication date
+- Retrieval date
 
 ---
 
@@ -129,7 +134,14 @@ Scores should be reproducible by another evaluator using the same methodology.
 
 ### 9. Resolve Reviewer Disagreements
 
-When multiple evaluators participate, disagreements should be documented and resolved using evidence rather than consensus alone.
+When multiple evaluators participate:
+
+- Document disagreements.
+- Re-examine supporting evidence.
+- Revise scores when warranted.
+- Record the rationale for any score changes.
+
+Evaluation outcomes should be evidence-driven rather than consensus-driven.
 
 ---
 
@@ -150,7 +162,8 @@ Publish the completed evaluation together with:
 
 - Prompt
 - Response
-- Evidence
+- Evaluation environment
+- Supporting evidence
 - Rubric scores
 - Reviewer notes
 
@@ -166,6 +179,12 @@ Every completed evaluation should document:
 - Model version
 - Platform
 - Prompt
+- Prompt parameters
+- Temperature or generation settings
+- Tool access
+- Web browsing status
+- System instructions (when known)
+- Number of trials
 - Model response
 - Supporting evidence
 - Rubric scores
@@ -190,26 +209,26 @@ Every completed evaluation should produce:
 
 The workflow is built around a few simple ideas:
 
-- Evaluate the response, not the model
-- Verify before scoring
-- Explain every conclusion
-- Separate facts from opinions
-- Preserve reproducibility
-- Document uncertainty
-- Prioritize evidence over intuition
+- Evaluate the response, not the model.
+- Verify before scoring.
+- Explain every conclusion.
+- Separate facts from opinions.
+- Preserve reproducibility.
+- Document uncertainty.
+- Prioritize evidence over intuition.
 
 ---
 
 ## Related Repositories
 
 - [AI-Evaluation-Rubrics](https://github.com/zaknick/AI-Evaluation-Rubrics)
-- AI-Hallucination-Database
-- LLM-Evaluation-Benchmarks
-- Prompt-Arena
-- AI-Safety-Evaluation
-- Search-Quality-Ratings
-- Bilingual-LLM-Evaluation
-- Prompt-Engineering-Cookbook
+- AI-Hallucination-Database *(coming soon)*
+- LLM-Evaluation-Benchmarks *(coming soon)*
+- Prompt-Arena *(coming soon)*
+- AI-Safety-Evaluation *(coming soon)*
+- Search-Quality-Ratings *(coming soon)*
+- Bilingual-LLM-Evaluation *(coming soon)*
+- Prompt-Engineering-Cookbook *(coming soon)*
 
 ---
 
@@ -217,10 +236,12 @@ The workflow is built around a few simple ideas:
 
 **Current Version:** 0.1
 
-This repository defines the operational methodology of the **LLM Evaluation Lab**. The workflow will continue to evolve as additional evaluation methods, rubrics, and benchmarking techniques are developed and validated.
+This repository defines the operational methodology of the [**LLM Evaluation Lab**](https://github.com/zaknick/LLM-Evaluation-Lab). The workflow will continue to evolve as additional evaluation methods, rubrics, and benchmarking techniques are developed and validated.
 
 ---
 
 ## License
 
-A project license will be added before Version 1.0 to define reuse and attribution requirements.
+This project is licensed under the **MIT License**.
+
+The MIT License permits reuse, modification, and distribution with attribution while preserving the original copyright notice. See the [LICENSE](LICENSE) file for details.
