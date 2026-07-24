@@ -184,7 +184,7 @@ Every completed evaluation should produce:
 - Specialized rubric scores (when applicable)
 - Findings suitable for publication
 
- ---
+---
 
 ## Guiding Principles
 
